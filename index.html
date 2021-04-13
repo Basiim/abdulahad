@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <title>Abdul Ahad</title>
+</head>
+
+<body>
+    <header class="l-header">
+        <nav class="nav bd-grid">
+            <div>
+                <a href="#home" class="nav__logo">Abdul Ahad</a>
+            </div>
+
+            <div class="nav__menu" id="nav-menu">
+                <div class="nav__close">
+                    <ion-icon name="close-outline" class="nav__close-icon" id="nav-close"></ion-icon>
+                </div>
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
+                    <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+                    <li class="nav__item"><a href="#work" class="nav__link">My Work</a></li>
+                </ul>
+            </div>
+
+            <div class="nav__toggle" id="nav-toggle">
+                <ion-icon name="ellipsis-horizontal-outline"></ion-icon>
+            </div>
+        </nav>
+    </header>
+
+    <main class="l-main bd-grid" id="home">
+        <div class="home">
+            <h1 class="home__title">HI!<br>I´M <br> AHAD</h1>
+
+            <div class="home__img">
+                <img src="assets/img/20200524090036_IMG_5951 (2).JPG" alt="" srcset="">
+            </div>
+
+            <div class="home__social">
+                <i class="fa fa-instagram" style="rotate: -180deg;"></i>
+                <a href="https://www.instagram.com/_outintheopen/" class="home__social-link" target="_blank">instagram</a>
+            </div>
+
+            <h2 class="home__subtitle">WRITER/POET<br>and COMPUTER ENGINEER</h2>
+        </div>
+    </main>
+    <section class="about" id="about">
+        <h1 class="about__title">About</h1>
+        <p class="about__subtitle">When my world fails me through writing I build my own; Where the rules are all mine, where everything bends to my will and goes like I want it to go. It has been what I have leaned on, it has been my happy palace, it has been my way of screaming
+            and at times it has been my only friend but more than all that it IS my escape!</p>
+    </section>
+    <section class="my-work" id="work">
+        <h1 class="mag__title">My Work</h1>
+        <div class="mag">
+            <img class="mag__img" src="assets/img/w1.PNG" alt="" srcset="">
+            <pre class="mag__subtitle" style="font-size: 1rem;">
+              When the sun shines on you
+              You'll be a fool to turn away
+              Even if it burns sometimes
+              Each time you'll still be there
+              When the lightning strikes 
+              Will you consider yourself lucky?
+              Or are you unlike me?
+              
+              And i know this is just a facade 
+              That i cant break through
+              But If I scream?
+              Will the glass shatter
+              From around me
+              And not be...
+              pieced together</pre>
+        </div>
+    </section>
+    <div class="credit">Powered By GeekClan</div>
+    <!-- MAIN -->
+    <script src="assets/js/main.js"></script>
+
+    <!-- GSAP -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.4/gsap.min.js"></script>
+
+    <!-- THREE JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/108/three.min.js" integrity="sha256-3mBEX8I0uMLF7+AUjJeTCelosuorzYpqwBMBPDTyQqY=" crossorigin="anonymous"></script>
+
+    <!-- ICONOS -->
+    <script type="module" src="https://unpkg.com/ionicons@5.0.0/dist/ionicons/ionicons.esm.js"></script>
+
+    <script>
+        /* NAV, TITLE Y IMG y*/
+        gsap.from('.nav', {
+            opacity: 0,
+            duration: 1,
+            delay: 1,
+            y: -30
+        })
+        gsap.from('.home__title', {
+            opacity: 0,
+            duration: 1.2,
+            delay: 1.2,
+            y: -30
+        })
+        gsap.from('.home__img', {
+            opacity: 0,
+            duration: 1.3,
+            delay: 1.3,
+            y: -50
+        })
+
+        /*SOCIAL, SUBTITLE Y BUTTON*/
+        gsap.from('.home__social', {
+            opacity: 0,
+            duration: 1,
+            delay: 1.5,
+            y: 50
+        })
+        gsap.from('.home__subtitle', {
+            opacity: 0,
+            duration: 1,
+            delay: 1.8,
+            y: 50
+        })
+        gsap.from('.home__button', {
+            opacity: 0,
+            duration: 1,
+            delay: 2,
+            y: 50
+        })
+    </script>
+</body>
+
+</html>
