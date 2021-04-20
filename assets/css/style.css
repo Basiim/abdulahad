@@ -148,6 +148,8 @@ img {
     align-items: center;
     justify-content: space-between;
     flex-direction: column;
+    padding-bottom: 1rem;
+    background-color: rgba(95, 67, 67, 0.5);
 }
 
 .mag__subtitle {
@@ -168,8 +170,15 @@ img {
 .credit {
     position: fixed;
     bottom: 1%;
-    right: 35%;
+    right: 38%;
     font-size: 0.7rem;
+}
+
+.post {
+    min-height: 100vh;
+    width: 99vw;
+    padding-left: 30%;
+    padding-right: 30%;
 }
 
 @media screen and (max-width: 768px) {
@@ -376,16 +385,16 @@ img {
     }
     .home__subtitle {
         padding-top: 18rem;
-        padding-right: 8rem;
+        padding-right: 3rem;
         position: fixed;
-        top: 32%;
-        right: 20%;
+        top: 35%;
+        right: 5%;
         z-index: var(--z-fixed);
     }
     .credit {
         position: fixed;
         bottom: 2%;
-        right: 42%;
+        right: 45%;
         left: auto;
         font-size: 0.9rem;
     }
@@ -398,6 +407,7 @@ img {
     }
     .mag__title {
         padding-right: 13rem;
+        margin-bottom: 5rem;
     }
     .mag {
         display: flex;
@@ -413,6 +423,7 @@ img {
         height: 500px;
         max-width: 400px;
         margin-right: 1rem;
+        margin-bottom: 5rem;
         width: auto;
         margin-left: -15rem;
     }
@@ -422,5 +433,54 @@ img {
     .bd-grid {
         margin-left: auto;
         margin-right: auto;
+    }
+    .home__img {
+        width: 400px;
+        height: 353px;
+    }
+    .home__subtitle {
+        padding-top: 2rem;
+        padding-right: 8rem;
+        position: fixed;
+        top: 32%;
+        right: 10%;
+        z-index: var(--z-fixed);
+    }
+    .post {
+        min-height: 100vh;
+        width: 99vw;
+        padding-left: 30%;
+        padding-right: 18%;
+    }
+    .mag {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-right: 5rem;
+        flex-direction: row;
+    }
+    .mag__title {
+        margin-bottom: 1rem;
+    }
+}
+
+@media screen and (min-width: 1920px) {
+    .bd-grid {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .post {
+        min-height: 100vh;
+        width: 99vw;
+        padding-left: 30%;
+        padding-right: 25%;
+    }
+    .home__subtitle {
+        padding-top: 0rem;
+        padding-right: 10rem;
+        position: fixed;
+        top: 35%;
+        right: 15%;
+        z-index: var(--z-fixed);
     }
 }
